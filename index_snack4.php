@@ -10,9 +10,12 @@ for ($i=0; count($numbers) < 15; $i++) {
 
     if (!in_array($item,$numbers)){
         $numbers[]=$item;
+    } else {
+        $i--;
     }
 }
 
 var_dump($numbers)
 
 ?>
+    
